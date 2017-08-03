@@ -1,0 +1,13 @@
+<div class="row">
+
+<p id="notice"><%= notice %></p>
+
+<h1>Campaigns</h1>
+
+	<ul class="collection">
+		<% @campaigns.each do |campaign| %>
+		<li class="collection-item"><%= link_to campaign.name, campaign %></li>
+		<% end %>
+	</ul>
+<br>
+</div>
